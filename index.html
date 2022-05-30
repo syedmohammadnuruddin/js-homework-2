@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      
+    </style>
+</head>
+<body>
+    <script>  
+        
+        // Fibonacchi Series
+          
+        var n1 = 0;
+        var n2 = 1;
+        var next_num, i;
+        var num = parseInt(prompt("Enter the limit for Fibonacci Series"));
+        document.write("Fibonacci Series");
+        for ( i = 1; i<=num; i++){
+            document.write("<br>" + n1);
+            next_num = n1 + n2;
+            n1 = n2;
+            n2 = next_num;
+        }
+
+        // Find the largest number
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<br>");
+        
+        document.write("Find the largest number");
+        var arr = [12, 60, 5, 52, 63, 45, 88, 21];
+        var largest = arr[0];
+
+        for (var i = 0; i < arr.length; i++) {
+            if (largest < arr[i] ) {
+                largest = arr[i];
+            }
+        }
+        document.write("<br>"+largest);
+
+
+        </script>  
+</body>
+</html>
